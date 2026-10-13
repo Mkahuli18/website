@@ -1,0 +1,263 @@
+/* General page styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Navigation Bar */
+
+nav {
+    background-color: hsl(210, 73%, 56%);
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 8%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+
+/* Home Section */
+
+.home {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 50px 8%;
+    background-color: white;
+}
+
+.home-text {
+    width: 50%;
+}
+
+.home-text h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.home-text h2 {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.home-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+/* Button */
+
+button {
+    background-color: #00b731;
+    color: rgb(255, 255, 255);
+
+    border: none;
+    padding: 12px 25px;
+
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-size: 16px;
+    
+}
+button a{
+    text-decoration: none;
+}
+button:hover {
+    background-color: #007c89;
+}
+
+
+/* Photo */
+
+.photo img {
+    width: 350px;
+    height: 350px;
+
+    object-fit: contain;
+
+    border-radius: 50%;
+    border: 5px solid #00a6b7;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 5);
+}
+/* about section */
+.about-section{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 20px;
+    padding: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.about-img img{
+    width: 300px;
+    height: 350px;
+}
+.about-box{
+    margin: 20px;
+}
+.about-box h2{
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.about-box p{
+    margin-bottom: 60px;
+    /* margin-right: 30px;
+    padding-right: 40px; */
+
+}
+.about-box button{
+    background-color: black;
+}
+.about-box button a {
+    color: white;
+}
+/* General Sections */
+
+.section {
+    padding: 70px 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #00a6b7;
+}
+
+.section p {
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+
+/* Skills */
+
+/* .skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    margin-top: 20px;
+}
+
+.skill {
+    background-color: rgb(91, 216, 18);
+
+    width: 250px;
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(20, 204, 232, 0.1);
+}
+
+.skill h3 {
+    color: #00a6b7;
+    margin-bottom: 10px;
+} */
+
+
+/* Contact */
+
+.contact-sec {
+    background-color: rgb(234, 236, 233);
+     display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 100px;
+    padding: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 10px;
+    /* display: flex; */
+}
+
+/* Footer */
+
+footer {
+    background-color: hsl(135, 2%, 38%);
+    color: white;
+
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Make the website mobile-friendly */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .home-text {
+        width: 100%;
+    }
+
+    .home-text h1 {
+        font-size: 32px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill {
+        width: 90%;
+    }
+}
